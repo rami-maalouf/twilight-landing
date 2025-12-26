@@ -6,24 +6,25 @@ const Hero = () => {
     <section className="relative min-h-screen flex items-center justify-center px-6 py-20 overflow-hidden">
       <div className="absolute top-20 left-10 w-72 h-72 rounded-full bg-primary/5 blur-3xl animate-float" />
       <div className="absolute bottom-20 right-10 w-96 h-96 rounded-full bg-accent/5 blur-3xl animate-float" style={{ animationDelay: "2s" }} />
-      
+
       <div className="relative z-10 max-w-3xl mx-auto text-center">
         <div className="inline-flex items-center gap-2 glass-card py-2 px-4 mb-8 opacity-0 animate-fade-in" style={{ animationDelay: "0.1s" }}>
           <Moon className="w-4 h-4 text-primary" />
-          <span className="text-sm text-muted-foreground">Radically simple sleep tracking</span>
+          <span className="text-sm text-muted-foreground">Open-source & offline</span>
         </div>
 
         <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-6 opacity-0 animate-fade-in" style={{ animationDelay: "0.2s" }}>
-          Just <span className="text-gradient">two taps.</span>
+          <span className="text-gradient">Simplest</span> but <span className="text-gradient">most effective</span> sleep tracker
         </h1>
 
         <p className="text-xl text-muted-foreground max-w-xl mx-auto mb-6 leading-relaxed opacity-0 animate-fade-in" style={{ animationDelay: "0.3s" }}>
-          Tap when you sleep. Tap when you wake. That's it. No microphones, no watch, no complexity — just the consistency that matters.
+          <span className="text-gradient">No</span> smart watch. <span className="text-gradient">No</span> microphone. <span className="text-gradient">No</span> wifi. <span className="text-gradient">No</span> battery drain. <span className="text-gradient">No</span> ads. <span className="text-gradient">Just</span> the data that actually matters.
+          Tap when you sleep. Tap when you wake. And we&rsquo;ll take care of the rest.
         </p>
 
-        <div className="inline-flex items-center gap-2 text-sm text-muted-foreground mb-10 opacity-0 animate-fade-in" style={{ animationDelay: "0.35s" }}>
+        <div className="inline-flex items-center gap-2 text- text-muted-foreground mb-10 opacity-0 animate-fade-in" style={{ animationDelay: "0.35s" }}>
           <Smartphone className="w-4 h-4 text-primary" />
-          <span>Or use NFC tags for zero-tap tracking</span>
+          <span>The only NFC-powered sleep tracker</span>
         </div>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 opacity-0 animate-fade-in" style={{ animationDelay: "0.4s" }}>
