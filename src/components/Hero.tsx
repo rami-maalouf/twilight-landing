@@ -1,4 +1,4 @@
-import { Moon, Apple, Heart, Smartphone } from "lucide-react";
+import { Moon, Apple, Heart, Smartphone, LockIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Hero = () => {
@@ -9,8 +9,9 @@ const Hero = () => {
 
       <div className="relative z-10 max-w-3xl mx-auto text-center">
         <div className="inline-flex items-center gap-2 glass-card py-2 px-4 mb-8 opacity-0 animate-fade-in" style={{ animationDelay: "0.1s" }}>
-          <Moon className="w-4 h-4 text-primary" />
-          <span className="text-sm text-muted-foreground">Open-source & offline</span>
+          {/* <Moon className="w-4 h-4 text-primary" /> */}
+          <LockIcon className="w-3.5 h-3.5 text-primary" />
+          <span className="text-sm font-medium text-muted-foreground">Open-source & offline</span>
         </div>
 
         <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-6 opacity-0 animate-fade-in" style={{ animationDelay: "0.2s" }}>
@@ -22,7 +23,7 @@ const Hero = () => {
           Tap when you sleep. Tap when you wake. And we&rsquo;ll take care of the rest.
         </p>
 
-        <div className="inline-flex items-center gap-2 text- text-muted-foreground mb-10 opacity-0 animate-fade-in" style={{ animationDelay: "0.35s" }}>
+        <div className="inline-flex items-center gap-2 font-medium text-muted-foreground mb-10 opacity-0 animate-fade-in" style={{ animationDelay: "0.35s" }}>
           <Smartphone className="w-4 h-4 text-primary" />
           <span>The only NFC-powered sleep tracker</span>
         </div>
