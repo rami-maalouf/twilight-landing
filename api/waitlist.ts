@@ -23,7 +23,7 @@ export default async function handler(request: Request) {
     }
 
     const notionApiKey = process.env.NOTION_API_KEY;
-    const notionDatabaseId = process.env.NOTION_WAITLIST_DATABASE_ID;
+    const notionDataSourceId = process.env.NOTION_WAITLIST_DATASOURCE_ID;
 
     if (!notionApiKey) {
       console.error("NOTION_API_KEY environment variable not found.");
@@ -36,8 +36,8 @@ export default async function handler(request: Request) {
       );
     }
 
-    if (!notionDatabaseId) {
-      console.error("NOTION_WAITLIST_DATABASE_ID environment variable not found.");
+    if (!notionDataSourceId) {
+      console.error("NOTION_WAITLIST_DATASOURCE_ID environment variable not found.");
       return new Response(
         JSON.stringify({ error: "Server configuration error" }),
         {
@@ -79,8 +79,8 @@ export default async function handler(request: Request) {
     // Add new email to the database
     const newPage = await notion.pages.create({
       parent: {
-        type: "database_id",
-        database_id: notionDatabaseId,
+        type: "data_source_id",
+        data_source_id: notionDataSourceId,
       },
       properties: {
         Email: {
