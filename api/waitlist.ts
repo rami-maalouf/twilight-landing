@@ -50,31 +50,31 @@ export default async function handler(request: Request) {
     // Initialize Notion client
     const notion = new Client({ auth: notionApiKey });
 
-    // Check if email already exists in the database
-    const existingPages = await notion.databases.query({
-      database_id: notionDatabaseId,
-      filter: {
-        property: "Email",
-        title: {
-          equals: email,
-        },
-      },
-    });
+    // // Check if email already exists in the database
+    // const existingPages = await notion.databases.retrieve({
+    //   database_id: notionDatabaseId,
+    //   // filter: {
+    //   //   property: "Email",
+    //   //   title: {
+    //   //     equals: email,
+    //   //   },
+    //   // },
+    // });
 
-    if (existingPages.results.length > 0) {
-      return new Response(
-        JSON.stringify({
-          success: true,
-          pageId: existingPages.results[0].id,
-          alreadyAdded: true,
-          message: "You're already on the waitlist!",
-        }),
-        {
-          status: 200,
-          headers: { "Content-Type": "application/json" },
-        }
-      );
-    }
+    // console.log(existingPages);
+    // console.log(existingPages.id);
+    // return new Response(
+    //   JSON.stringify({
+    //     success: true,
+    //     pageId: existingPages.id,
+    //     alreadyAdded: true,
+    //     message: "You're already on the waitlist!",
+    //   }),
+    //   {
+    //     status: 200,
+    //     headers: { "Content-Type": "application/json" },
+    //   }
+    // );
 
     // Add new email to the database
     const newPage = await notion.pages.create({
@@ -98,9 +98,11 @@ export default async function handler(request: Request) {
           },
         },
         Platform: {
-          select: {
-            name: "Android",
-          },
+          multi_select: [
+            {
+              name: "Android",
+            },
+          ],
         },
       },
     });
