@@ -1,0 +1,11 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "3V2UU7RRK9.studio.orbitlabs.twilight",
+        "paths": [ "/profile/*"]
+      }
+    ]
+  }
+}
