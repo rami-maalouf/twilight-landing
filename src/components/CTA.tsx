@@ -12,10 +12,12 @@ const CTA = () => {
           <p className="text-muted-foreground mb-6">
             Start tracking your sleep consistency today.
           </p>
-          
-          <Button variant="hero" size="lg">
-            Get Started Free
-            <ArrowRight className="w-5 h-5" />
+
+          <Button variant="hero" size="lg" asChild>
+            <a href="https://testflight.apple.com/join/Zj1W3kmf" target="_blank" rel="noopener noreferrer">
+              Get Started Free
+              <ArrowRight className="w-5 h-5" />
+            </a>
           </Button>
 
           <p className="text-xs text-muted-foreground mt-4">
