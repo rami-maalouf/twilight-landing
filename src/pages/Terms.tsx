@@ -22,7 +22,7 @@ const Terms = () => {
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
             Terms of Service
           </h1>
-          <p className="text-muted-foreground mb-12">Last updated: December 26, 2024</p>
+          <p className="text-muted-foreground mb-12">Last updated: December 26, 2025</p>
 
           <div className="space-y-8 text-muted-foreground">
             <section>
