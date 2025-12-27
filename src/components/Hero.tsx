@@ -1,4 +1,4 @@
-import { Moon, Apple, Heart, Smartphone, LockIcon } from "lucide-react";
+import { Apple, Heart, Smartphone, LockIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Hero = () => {
@@ -9,7 +9,6 @@ const Hero = () => {
 
       <div className="relative z-10 max-w-3xl mx-auto text-center">
         <div className="inline-flex items-center gap-2 glass-card py-2 px-4 mb-8 opacity-0 animate-fade-in" style={{ animationDelay: "0.1s" }}>
-          {/* <Moon className="w-4 h-4 text-primary" /> */}
           <LockIcon className="w-3.5 h-3.5 text-primary" />
           <span className="text-sm font-medium text-muted-foreground">Open-source & offline</span>
         </div>
