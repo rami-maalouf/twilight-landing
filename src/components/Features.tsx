@@ -1,26 +1,26 @@
-import { Clock, Target, TrendingUp, Smartphone } from "lucide-react";
+import { Clock, Target, TrendingUp, Smartphone, Lock } from "lucide-react";
 
 const features = [
   {
-    icon: Clock,
-    title: "Two Taps",
-    description: "Tap when you sleep. Tap when you wake. That's it.",
-  },
-  {
     icon: Target,
-    title: "Set Goals",
-    description: "Define your ideal times. We help you stick to them.",
-  },
-  {
-    icon: TrendingUp,
-    title: "See Progress",
-    description: "Weekly and monthly consistency scores at a glance.",
+    title: "Simple Onboarding",
+    description: "Set your ideal times. We help you stick to them.",
   },
   {
     icon: Smartphone,
-    title: "NFC Tags",
-    description: "Place a tag on your nightstand. Tap to start, tap to stop.",
+    title: "Simple tracking",
+    description: "Never miss a tap again by placing an NFC tag on your nightstand",
   },
+  {
+    icon: TrendingUp,
+    title: "Track what matters",
+    description: "Sleep and wake times. That's all you need.",
+  },
+  {
+    icon: Lock,
+    title: "Nothing leaves your phone",
+    description: "Everything is stored locally on your device",
+  }
 ];
 
 const Features = () => {
@@ -28,7 +28,7 @@ const Features = () => {
     <section className="relative py-24 px-6">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">
             Simple by <span className="text-gradient">design</span>
           </h2>
           <p className="text-muted-foreground max-w-lg mx-auto">
