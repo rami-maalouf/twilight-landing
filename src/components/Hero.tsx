@@ -7,7 +7,7 @@ const Hero = () => {
       <div className="absolute top-20 left-10 w-72 h-72 rounded-full bg-primary/5 blur-3xl animate-float" />
       <div className="absolute bottom-20 right-10 w-96 h-96 rounded-full bg-accent/5 blur-3xl animate-float" style={{ animationDelay: "2s" }} />
 
-      <div className="relative z-10 max-w-4xl mx-auto text-center gap-y-4 sm:gap-y-8 flex flex-col items-center">
+      <div className="relative z-10 max-w-4xl text-center gap-y-4 sm:gap-y-8 flex flex-col items-center">
         <div className="inline-flex items-center gap-2 glass-card py-2 px-4 opacity-0 animate-fade-in" style={{ animationDelay: "0.1s" }}>
           <LockIcon className="w-3.5 h-3.5 text-primary" />
           <span className="text-sm font-medium text-muted-foreground">Open-source & offline</span>
