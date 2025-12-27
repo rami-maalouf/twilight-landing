@@ -22,14 +22,14 @@ const Footer = () => {
             <Link to="/terms" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
               Terms
             </Link>
-            <a href="mailto:twilight@ramimaalouf.com" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+            <a href="mailto:twilight@ramimaalouf.com" target="_blank" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
               Contact
             </a>
           </nav>
 
           {/* Copyright */}
           <p className="text-sm text-muted-foreground">
-            © 2025 Twilight by <a href="https://orbitlabs.studio" className="text-primary hover:underline transition-colors">Orbit Labs</a>
+            © 2025 Twilight by <a href="https://orbitlabs.studio" className="text-primary hover:underline transition-colors" target="_blank">Orbit Labs</a>
           </p>
         </div>
       </div>

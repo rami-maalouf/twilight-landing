@@ -20,7 +20,7 @@ const Terms = () => {
           </Link>
 
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            Terms of <span className="text-gradient">Service</span>
+            Terms of Service
           </h1>
           <p className="text-muted-foreground mb-12">Last updated: December 26, 2024</p>
 

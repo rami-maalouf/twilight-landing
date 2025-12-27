@@ -20,7 +20,7 @@ const Privacy = () => {
           </Link>
 
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            Privacy <span className="text-gradient">Policy</span>
+            Privacy Policy
           </h1>
           <p className="text-muted-foreground mb-12">Last updated: December 26, 2024</p>
 
@@ -63,7 +63,7 @@ const Privacy = () => {
               <p>
                 If you join our Android waitlist, we collect only your email address to notify
                 you when the Android version launches. This email is stored securely and will
-                never be shared with third parties or used for marketing beyond the waitlist notification.
+                never be shared with third parties.
               </p>
             </section>
 
