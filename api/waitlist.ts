@@ -13,7 +13,7 @@ export default async function handler(request: Request) {
   }
 
   try {
-    const { email } = await request.json();
+    const { email, platform = "Android" } = await request.json();
 
     if (!email || typeof email !== "string") {
       return new Response(JSON.stringify({ error: "Email is required" }), {
@@ -21,6 +21,9 @@ export default async function handler(request: Request) {
         headers: { "Content-Type": "application/json" },
       });
     }
+
+    const validPlatforms = ["iOS", "Android"];
+    const normalizedPlatform = validPlatforms.includes(platform) ? platform : "Android";
 
     const notionApiKey = process.env.NOTION_API_KEY;
     const notionDataSourceId = process.env.NOTION_WAITLIST_DATASOURCE_ID;
@@ -100,7 +103,7 @@ export default async function handler(request: Request) {
         Platform: {
           multi_select: [
             {
-              name: "Android",
+              name: normalizedPlatform,
             },
           ],
         },

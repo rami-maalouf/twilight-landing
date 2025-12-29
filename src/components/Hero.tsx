@@ -1,5 +1,6 @@
 import { Apple, Heart, Smartphone, LockIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { WaitlistModal } from "@/components/WaitlistModal";
 
 const Hero = () => {
   return (
@@ -29,12 +30,12 @@ const Hero = () => {
         </div>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 opacity-0 animate-fade-in" style={{ animationDelay: "0.4s" }}>
-          <Button variant="hero" size="xl" asChild>
-            <a href="https://testflight.apple.com/join/Zj1W3kmf" target="_blank" rel="noopener noreferrer">
+          <WaitlistModal platform="iOS">
+            <Button variant="hero" size="xl">
               <Apple className="w-5 h-5" />
               Download on the App Store
-            </a>
-          </Button>
+            </Button>
+          </WaitlistModal>
           <Button variant="glass" size="xl" asChild>
             <a href="https://github.com/sponsors/psycho-baller" target="_blank" rel="noopener noreferrer">
               <Heart className="w-5 h-5" />
