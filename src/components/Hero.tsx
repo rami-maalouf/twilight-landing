@@ -1,6 +1,5 @@
 import { Apple, Heart, Smartphone, LockIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { WaitlistModal } from "@/components/WaitlistModal";
 
 const Hero = () => {
   return (
@@ -30,12 +29,12 @@ const Hero = () => {
         </div>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 opacity-0 animate-fade-in" style={{ animationDelay: "0.4s" }}>
-          <WaitlistModal platform="iOS">
-            <Button variant="hero" size="xl">
+          <Button variant="hero" size="xl" asChild>
+            <a href="https://apps.apple.com/ca/app/twilight-simple-sleep-tracker/id6757098758" target="_blank" rel="noopener noreferrer">
               <Apple className="w-5 h-5" />
               Download on the App Store
-            </Button>
-          </WaitlistModal>
+            </a>
+          </Button>
           <Button variant="glass" size="xl" asChild>
             <a href="https://github.com/sponsors/psycho-baller" target="_blank" rel="noopener noreferrer">
               <Heart className="w-5 h-5" />
