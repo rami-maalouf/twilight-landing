@@ -29,7 +29,7 @@ const Footer = () => {
 
           {/* Copyright */}
           <p className="text-sm text-muted-foreground">
-            © 2025 Twilight by <a href="https://orbitlabs.studio" className="text-primary hover:underline transition-colors" target="_blank">Orbit Labs</a>
+            © 2026 Twilight by <a href="https://orbitlabs.studio" className="text-primary hover:underline transition-colors" target="_blank">Orbit Labs</a>
           </p>
         </div>
       </div>
