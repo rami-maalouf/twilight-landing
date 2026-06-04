@@ -33,7 +33,7 @@ export const Header = () => {
         <div className="flex items-center gap-2 sm:gap-4">
           <div className="flex items-center gap-1 sm:gap-2">
             <a
-              href="https://github.com/psycho-baller/twilight-landing"
+              href="https://github.com/rami-maalouf/twilight-landing"
               target="_blank"
               rel="noopener noreferrer"
               className="w-9 h-9 rounded-lg flex items-center justify-center hover:bg-secondary transition-colors"

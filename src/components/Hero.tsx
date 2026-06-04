@@ -36,7 +36,7 @@ const Hero = () => {
             </a>
           </Button>
           <Button variant="glass" size="xl" asChild>
-            <a href="https://github.com/sponsors/psycho-baller" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/sponsors/rami-maalouf" target="_blank" rel="noopener noreferrer">
               <Heart className="w-5 h-5" />
               Support us
             </a>
